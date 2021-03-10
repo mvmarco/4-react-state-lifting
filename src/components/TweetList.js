@@ -1,9 +1,3 @@
-/* 
-  In order to: click submit and clear the "state", bringing back to the initial state "".
-  And create another state that contains, like a sort of an array, a list of all
-  the previous submited status.
-*/
-
 import Tweet from "./Tweet";
 
 function TweetList ({name, message, setName}) {
