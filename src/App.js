@@ -21,7 +21,6 @@ import CreateTweet from './components/CreateTweet.js'
 import { useState } from 'react';
 
 function App() {
-  const message = "I love my dog"
   //states
   const [name, setName] = useState("Marco");
   // lifted states from CreateTweet, you gotta pass them as props
@@ -36,7 +35,7 @@ function App() {
         tweets={tweets} 
         setTweets={setTweets}
       />
-      <TweetList name={name} setName={setName} message={tweets} />
+      <TweetList name={name} setName={setName} tweets={tweets} />
     </div>
   );
 }

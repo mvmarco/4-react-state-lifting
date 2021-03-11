@@ -80,11 +80,12 @@
   so the function CreateTweet can run.
 
   Then the last thing is to pass the message now updated "tweets" as a prop to the "TweetList"
-  so instead of having message={message}, we have now message={tweets}. The problem is that
+  so instead of having message={message}, we have now tweets={tweets}. The problem is that
   we replace every messages with what we submit, then if we submit again, the message one
   lets say "hello" gets attached to the message two "hi", resulting in "hello","hi" but seen
-  like hellohi.
-  
+  like hellohi. So we need to know how to render multiple components, and it is so common
+  in React. check "TweetList.js".
+  -----------------------------------------------------------------------------------------
 */
 
 function CreateTweet({textInput, setTextInput, tweets, setTweets}) {
