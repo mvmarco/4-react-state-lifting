@@ -21,13 +21,22 @@ import CreateTweet from './components/CreateTweet.js'
 import { useState } from 'react';
 
 function App() {
-  const [name, setName] = useState("Marco");
   const message = "I love my dog"
+  //states
+  const [name, setName] = useState("Marco");
+  // lifted states from CreateTweet, you gotta pass them as props
+  const [textInput, setTextInput] = useState("");
+  const [tweets, setTweets] = useState([]);
   return (
     <div>
       <h1>Hello {name}</h1>
-      <CreateTweet />
-      <TweetList name={name} setName={setName} message={message} />
+      <CreateTweet 
+        textInput={textInput} 
+        setTextInput={setTextInput}
+        tweets={tweets} 
+        setTweets={setTweets}
+      />
+      <TweetList name={name} setName={setName} message={tweets} />
     </div>
   );
 }
