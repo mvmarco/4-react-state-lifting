@@ -79,12 +79,14 @@
       function CreateTweet({textInput, setTextInput, tweets, setTweets}) {.....etc etc..}
   so the function CreateTweet can run.
 
-  Then the last thing is to pass the message now updated "tweets" as a prop to the "TweetList"
-  so instead of having message={message}, we have now tweets={tweets}. The problem is that
-  we replace every messages with what we submit, then if we submit again, the message one
-  lets say "hello" gets attached to the message two "hi", resulting in "hello","hi" but seen
-  like hellohi. So we need to know how to render multiple components, and it is so common
-  in React. check "TweetList.js".
+  Then the last thing is to pass the message now updated "tweet" as a prop to the "TweetList"
+  so instead of having message={message}, we have now tweet={tweet}. The problem is that
+  we replace every single messages with what we submit (so every tweet will look like the same)
+  then if we submit again, the message one lets say "hello" gets attached to the message two 
+  "hi", resulting in "hello","hi" but seen like hellohi. So we need to know how to render 
+  multiple components, and it is so common in React. check "TweetList.js".
+
+  While to "delete" and "like" a message go to "Tweet.js"
   -----------------------------------------------------------------------------------------
 */
 
