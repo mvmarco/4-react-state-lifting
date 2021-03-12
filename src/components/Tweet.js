@@ -39,6 +39,10 @@
       associated with that button). So if the item of the array is not equal to the current 
       tweet we are referring to, you basically return/set a new array with "setTweet" which does
       not include the current tweet you were referring to.
+
+    important: the problem is that we are relaying on the message to delete the tweet.
+    What if we have equal 4 messages. We delete all of them then. Because we delete things
+    based on the text and not some sort of ID. It will be covered in the next note file.
   */
   
   function Tweet({name, tweet, tweets, status, setTweets}) {
